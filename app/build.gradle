@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.1"
+    defaultConfig {
+        applicationId "com.lak.android.sqlcrudactivitywithimage"
+        minSdkVersion 27
+        //17
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        useLibrary 'org.apache.http.legacy'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    testImplementation 'junit:junit:4.12'
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+//googleplay services dependency
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+//glide dependency
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    annotationProcessor 'com.android.support:support-annotations:28.0.0'
+    //      'android.annotation:annotation:1.1.0'
+//RecyclerView dependency
+//implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    // for adding recyclerview
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+//implementation 'androidx.recyclerview.widget.RecyclerView'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+//circular imageview dependency
+////implementation 'de.hdodenhof:circleimageview:3.1.0'
+//dependency for Constraint layout
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+//for glide
+    implementation ("com.github.bumptech.glide:glide:4.9.0") {
+        exclude group: "com.android.support"
+    }
+    //  annotationProcessor 'androidx.annotation:annotation:1.1.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation ("com.github.bumptech.glide:glide:4.9.0@aar") {
+        transitive = true
+    }
+//implementation 'android.swiperefreshlayout:swiperefreshlayout:1.0.0'
+}
+

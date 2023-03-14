@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SqlCrudActivityWithImage</string>
+    <string name="Choose_image">Choose image</string>
+    <string name="Add">Add</string>
+    <string name="Recipe_List">Recipe List</string>
+    <string name="name">Name</string>
+    <string name="ingredie">Ingred</string>
+    <string name="update">Update</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="ingredien">Ingred</string>
+    <string name="Recycler_list">Recycler_list</string>
+    <string name="recipe_name">Recipe name</string>
+    <string name="preptime">Preptime</string>
+    <string name="nutvalue">Nutvalue</string>
+    <string name="INGREDIENTS">INGREDIENTS</string>
+    <string name="Login_Status">LoginStatus</string>
+    <string name="Apples">Apples</string>
+    <string name="Apple">Apple</string>
+
+    <string name="todo1">todo</string>
+    <string name="todo2">todo</string>
+    <string name="todo3">todo</string>
+    <string name="todo4">todo</string>
+    <string name="todo5">todo</string>
+    <string name="todo6">todo</string>
+    <string name="todo7">todo</string>
+
+
+</resources>
